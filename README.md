@@ -7,9 +7,10 @@
 ## Technologies
 
 - React Native
-- Lottie Animations
 - Local Storage
-- Navigation
+- Local Notification (Scheduleds)
+- Navigation (Stack and Tab)
+- Lottie Animations
 
 ## Usage
 
@@ -22,6 +23,12 @@ $ cd plantmanager
 
 # Install dependencies
 $ yarn 
+
+# Install json-server to emulate api
+$ npm install -g json-server
+
+# Run json-server using IP
+$ json-server ./src/services/server.json --host [IP] --port 3333 --delay 700
 
 # Initalize 
 $ expo start
