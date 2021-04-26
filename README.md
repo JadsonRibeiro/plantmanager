@@ -7,6 +7,8 @@
 ## Technologies
 
 - React Native
+- Expo
+- TypeScript
 - Local Storage
 - Local Notification (Scheduleds)
 - Navigation (Stack and Tab)

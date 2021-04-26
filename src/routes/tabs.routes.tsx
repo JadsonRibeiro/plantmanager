@@ -1,9 +1,12 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { PlantSelect } from '../pages/PlantSelect';
 import { MaterialIcons } from '@expo/vector-icons';
+
+import { PlantSelect } from '../pages/PlantSelect';
 import { MyPlants } from '../pages/MyPlants';
+
 import colors from '../styles/colors';
+import { Platform } from 'react-native';
 
 const AuthTab = createBottomTabNavigator();
 
@@ -13,7 +16,11 @@ export default function AuthRoutes () {
             tabBarOptions={{
                 activeTintColor: colors.green,
                 inactiveTintColor: colors.heading,
-                labelPosition: 'beside-icon'
+                labelPosition: 'beside-icon',
+                style:{
+                    height: 60,
+                    paddingVertical: Platform.OS === 'ios' ? 20 : 0
+                }
             }}
         >
             <AuthTab.Screen 

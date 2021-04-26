@@ -4,12 +4,12 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { Welcome } from '../pages/Welcome';
 import { Confirmation } from '../pages/Confirmation';
 import { UserIdentification } from '../pages/UserIdentification';
-import { PlantSelect } from '../pages/PlantSelect';
 import PlantSave from '../pages/PlantSave';
+import { MyPlants } from '../pages/MyPlants';
+
+import AuthRoutes from './tabs.routes';
 
 import colors from '../styles/colors';
-import { MyPlants } from '../pages/MyPlants';
-import AuthRoutes from './tabs.routes';
 
 const StackRoutes = createStackNavigator();
 
